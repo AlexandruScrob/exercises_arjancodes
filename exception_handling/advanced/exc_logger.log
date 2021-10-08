@@ -1,0 +1,8 @@
+2021-10-08 23:16:32,813 - exc_logger - ERROR - exception in divideByZero
+=============
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\exercises\exception_handling\advanced\logging_decorator.py", line 38, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\exercises\exception_handling\advanced\logging_decorator.py", line 52, in divideByZero
+    return 12 / 0
+ZeroDivisionError: division by zero
