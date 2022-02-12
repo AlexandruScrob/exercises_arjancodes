@@ -1,5 +1,7 @@
 black==22.1.0
 pylint==2.12.2
+flask==2.0.2
+ariadne==0.14.1
 
 # Python: 3.9.9
 aiosqlite
