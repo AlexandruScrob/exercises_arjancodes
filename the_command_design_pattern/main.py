@@ -1,6 +1,7 @@
 from banking.bank import Bank
 from banking.controller import BankController
 from banking.commands import Deposit, Withdrawl, Transfer
+from banking.commands import Batch
 
 
 def main() -> None:
@@ -17,16 +18,23 @@ def main() -> None:
     account3 = bank.create_account("Microsoft")
 
     controller.execute(Deposit(account1, 100000))
-    controller.execute(Deposit(account2, 100000))
+
+    controller.execute(
+        Batch(
+            commands=[
+                Deposit(account2, 100000),
+                Transfer(from_account=account2, to_account=account1, amount=50000),
+            ]
+        )
+    )
+    controller.undo()
+    print(bank)
+    controller.redo()
+
     controller.execute(Deposit(account3, 100000))
 
     controller.undo()
     controller.redo()
-
-    # transfer
-    controller.execute(
-        Transfer(from_account=account2, to_account=account1, amount=50000)
-    )
 
     controller.execute(Withdrawl(account1, 150000))
 
