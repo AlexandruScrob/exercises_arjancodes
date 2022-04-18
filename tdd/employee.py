@@ -23,9 +23,9 @@ class Employee:
     def compute_payout(self) -> float:
         """Compute how much the employee should be paid."""
         employer_cost = (
-                self.employer_401k_costs
-                + self.employer_office_costs
-                + self.employer_support_costs
+            self.employer_401k_costs
+            + self.employer_office_costs
+            + self.employer_support_costs
         )
         payout = self.pay_rate * self.hours_worked + employer_cost
 

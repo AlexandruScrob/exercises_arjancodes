@@ -1,12 +1,12 @@
-from enum import Enum, auto
+from enum import Enum
 
 
 class Entity(Enum):
-    ROCK = auto()
-    PAPER = auto()
-    SCISSOR = auto()
-    SPOCK = auto()
-    LIZARD = auto()
+    ROCK = "rock"
+    PAPER = "paper"
+    SCISSOR = "scissor"
+    SPOCK = "spock"
+    LIZARD = "lizzard"
 
-    def __repr__(self) -> str:
-        return f"{self.name} : {self.value}"
+    def __str__(self) -> str:
+        return self.value

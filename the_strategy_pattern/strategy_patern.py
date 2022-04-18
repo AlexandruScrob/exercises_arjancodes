@@ -6,7 +6,7 @@ from abc import ABC, abstractmethod
 
 def generate_id(length=8):
     # helper function for generating an id
-    return ''.join(random.choices(string.ascii_uppercase, k=length))
+    return "".join(random.choices(string.ascii_uppercase, k=length))
 
 
 class SupportTicket:
@@ -23,36 +23,31 @@ class SupportTicket:
 # TODO this can be replaced with a functional approach
 class TicketOrderingStrategy(ABC):
     @abstractmethod
-    def create_ordering(self, lst: List[SupportTicket]
-                        ) -> List[SupportTicket]:
+    def create_ordering(self, lst: List[SupportTicket]) -> List[SupportTicket]:
         pass
 
 
 class FIFOOrderingStrategy(TicketOrderingStrategy):
-    def create_ordering(self, lst: List[SupportTicket]
-                        ) -> List[SupportTicket]:
+    def create_ordering(self, lst: List[SupportTicket]) -> List[SupportTicket]:
         return lst.copy()
 
 
 class FILOOrderingStrategy(TicketOrderingStrategy):
-    def create_ordering(self, lst: List[SupportTicket]
-                        ) -> List[SupportTicket]:
+    def create_ordering(self, lst: List[SupportTicket]) -> List[SupportTicket]:
         list_copy = lst.copy()
         list_copy.reverse()
         return list_copy
 
 
 class RandomOrderingStrategy(TicketOrderingStrategy):
-    def create_ordering(self, lst: List[SupportTicket]
-                        ) -> List[SupportTicket]:
+    def create_ordering(self, lst: List[SupportTicket]) -> List[SupportTicket]:
         list_copy = lst.copy()
         random.shuffle(list_copy)
         return list_copy
 
 
 class BlackHoleOrderingStrategy(TicketOrderingStrategy):
-    def create_ordering(self, lst: List[SupportTicket]
-                        ) -> List[SupportTicket]:
+    def create_ordering(self, lst: List[SupportTicket]) -> List[SupportTicket]:
         return []
 
 

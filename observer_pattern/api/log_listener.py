@@ -7,8 +7,7 @@ def handle_user_registered_event(user):
 
 
 def handle_user_password_forgotten_event(user):
-    log(f"User with email address {user.email} requested"
-        f" a password reset.")
+    log(f"User with email address {user.email} requested" f" a password reset.")
 
 
 def setup_log_event_handlers():

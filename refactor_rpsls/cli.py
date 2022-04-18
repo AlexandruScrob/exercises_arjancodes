@@ -3,28 +3,28 @@ from entity import Entity
 
 
 def _entities_str() -> str:
-    """Displays the user choices"""
-    return ", ".join(f"({entity.value} for {entity.name})" for entity in Entity)
+    """Displays the entity choices"""
+    return ", ".join(
+        f"({index + 1} for {entity})" for index, entity in enumerate(Entity)
+    )
 
 
 class CLI:
     def pick_player_entity(self) -> Entity:
-        available_choices = [entity.value for entity in Entity]
         while True:
             try:
                 print(f"Select {_entities_str()}:", end="\t")
                 choice = int(input())
 
-                if choice not in available_choices:
-                    print("Please select from available choices")
+                if 0 < choice < len(Entity) + 1:
+                    return list(Entity)[choice - 1]
                 else:
-                    return Entity(choice)
+                    print("Please select from available choices")
             except ValueError:
                 print("You entered something other than a number")
 
     def pick_cpu_entity(self) -> Entity:
-        cpu_choice = random.randint(1, len(Entity))
-        return Entity(cpu_choice)
+        return random.choice(list(Entity))
 
     def read_player_name(self) -> str:
         print("Please enter your name:", end="\t")
@@ -54,4 +54,8 @@ class CLI:
         print(f"{winner_name} ({winner_entity.name}) wins the round as {message}")
 
     def display_scores(self, scores: dict[str, int]) -> None:
-        raise NotImplementedError()
+        print("Scoreboard:")
+        print("======================================")
+        for user, score in scores.items():
+            print(f"{user} : {score}", end="\t")
+        print("\n======================================")

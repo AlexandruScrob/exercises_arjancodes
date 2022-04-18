@@ -18,12 +18,12 @@ class StripePaymentProcessor:
         return obj
 
     def connect_to_service(self, url: str) -> None:
-        print(f"Connecting to payment processing service at "
-              f"url {url}... done!")
+        print(f"Connecting to payment processing service at " f"url {url}... done!")
         self.connected = True
 
     def process_payment(self, reference: str, price: int) -> None:
         if not self.connected:
             raise PaymentServiceConnectionError()
-        print(f"Processing payment of ${(price / 100):.2f}, "
-              f"reference: {reference}.")
+        print(
+            f"Processing payment of ${(price / 100):.2f}, " f"reference: {reference}."
+        )

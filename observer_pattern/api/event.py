@@ -15,4 +15,3 @@ def post_event(event_type: str, data):
 
     for fn in subscribers[event_type]:
         fn(data)
-

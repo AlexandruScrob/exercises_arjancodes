@@ -5,10 +5,9 @@ from my_package import module
 
 
 # careful with too many default arguments
-def compute_total_price(unit_price: int, quantity: int = 1,
-                        discount_perc: float = 0):
+def compute_total_price(unit_price: int, quantity: int = 1, discount_perc: float = 0):
     total = unit_price * quantity
-    return int((1-discount_perc) * total)
+    return int((1 - discount_perc) * total)
 
 
 # TODO never use mutable arguments as default value

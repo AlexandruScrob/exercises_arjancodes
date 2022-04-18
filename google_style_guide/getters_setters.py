@@ -37,8 +37,9 @@ class Order:
         # something more than just setting the value
 
         if self._payment_status == PaymentStatus.PAID:
-            raise PaymentStatusError("Can't change the status of an already"
-                                     "paid order")
+            raise PaymentStatusError(
+                "Can't change the status of an already" "paid order"
+            )
 
         self._payment_status = status
 

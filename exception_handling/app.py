@@ -4,17 +4,17 @@ from db import fetch_blogs, fetch_blog, NotFoundError, NotAuthorizedError
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route("/")
 def hello_world():
-    return 'Hello, World!'
+    return "Hello, World!"
 
 
-@app.route('/blogs')
+@app.route("/blogs")
 def all_blogs():
     return jsonify(fetch_blogs())
 
 
-@app.route('/blogs/<_id>')
+@app.route("/blogs/<_id>")
 def get_blog(_id):
     try:
         return jsonify(fetch_blog(_id))
@@ -26,5 +26,5 @@ def get_blog(_id):
         abort(403, description="Access denied")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run()

@@ -13,22 +13,21 @@ class Switchable(ABC):
 
 class LightBulb(Switchable):
     def turn_on(self):
-        print('LightBulb: tuned on')
+        print("LightBulb: tuned on")
 
     def turn_off(self):
-        print('LightBulb: tuned off')
+        print("LightBulb: tuned off")
 
 
 class Fan(Switchable):
     def turn_on(self):
-        print('Fan: tuned on')
+        print("Fan: tuned on")
 
     def turn_off(self):
-        print('Fan: tuned off')
+        print("Fan: tuned off")
 
 
 class ElectricPowerSwitch:
-
     def __init__(self, c: Switchable):
         self.client = c
         self.on = False

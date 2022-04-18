@@ -43,9 +43,7 @@ class SalariedEmployee(Employee):
 
     def compute_pay(self) -> float:
         """Compute how much the employee should be paid."""
-        return (
-            self.monthly_salary * self.percentage
-        )
+        return self.monthly_salary * self.percentage
 
 
 @dataclass
@@ -58,10 +56,7 @@ class SalariedEmployeeWithCommission(SalariedEmployee):
 
     def compute_pay(self) -> float:
         """Compute how much the employee should be paid."""
-        return (
-                super().compute_pay()
-                + self.commission * self.contracts_landed
-                )
+        return super().compute_pay() + self.commission * self.contracts_landed
 
 
 @dataclass
@@ -74,25 +69,20 @@ class Freelancer(Employee):
 
     def compute_pay(self) -> float:
         """Compute how much the employee should be paid."""
-        return (
-            self.pay_rate * self.hours_worked
-        )
+        return self.pay_rate * self.hours_worked
 
 
 @dataclass
 class FreelancerWithCommission(Freelancer):
     """Freelancer that's paid based on number of worked hours and
-     that gets a commission."""
+    that gets a commission."""
 
     commission: float = 100
     contracts_landed: float = 0
 
     def compute_pay(self) -> float:
         """Compute how much the employee should be paid."""
-        return (
-            super().compute_pay() + self.commission *
-            self.contracts_landed
-        )
+        return super().compute_pay() + self.commission * self.contracts_landed
 
 
 def main() -> None:

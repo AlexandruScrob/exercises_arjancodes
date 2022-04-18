@@ -56,38 +56,33 @@ class Employee(ABC):
 @dataclass
 class HourlyContract(Contract):
     """Contract type for an employee that's
-     paid based on number of worked hours."""
+    paid based on number of worked hours."""
 
     pay_rate: float = 0
     hours_worked: int = 0
     employer_cost: float = 1000
 
     def get_payment(self) -> float:
-        return (
-            self.pay_rate * self.hours_worked
-            + self.employer_cost
-        )
+        return self.pay_rate * self.hours_worked + self.employer_cost
 
 
 @dataclass
 class SalariedContract(Contract):
     """Contract type for an employee that's paid
-     based on a fixed monthly salary."""
+    based on a fixed monthly salary."""
 
     monthly_salary: float = 0
     percentage: float = 1
 
     def get_payment(self) -> float:
         """Compute how much the employee should be paid."""
-        return (
-            self.monthly_salary * self.percentage
-        )
+        return self.monthly_salary * self.percentage
 
 
 @dataclass
 class FreelancerContract(Contract):
     """Contract type for an employee that's paid
-     based on a freelancer basis."""
+    based on a freelancer basis."""
 
     pay_rate: float = 0
     hours_worked: int = 0
@@ -95,9 +90,7 @@ class FreelancerContract(Contract):
 
     def get_payment(self) -> float:
         """Compute how much the freelancer should be paid."""
-        return (
-            self.pay_rate * self.hours_worked
-        )
+        return self.pay_rate * self.hours_worked
 
 
 def main() -> None:
@@ -112,8 +105,9 @@ def main() -> None:
 
     sarah_contract = SalariedContract(monthly_salary=5000)
     sarah_commission = ContractCommission(contracts_landed=10)
-    sarah = Employee(name="Sarah", id=47832, contract=sarah_contract,
-                     commission=sarah_commission)
+    sarah = Employee(
+        name="Sarah", id=47832, contract=sarah_contract, commission=sarah_commission
+    )
     print(
         f"{sarah.name} landed {sarah_commission.contracts_landed}"
         f" contracts and earned ${sarah.compute_pay()}."

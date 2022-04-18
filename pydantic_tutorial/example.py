@@ -44,7 +44,7 @@ class Book(pydantic.BaseModel):
         if "isbn_10" not in values and "isbn13" not in values:
             raise ISBNMissingError(
                 title=values["title"],
-                message="Document should be either an ISBN10 or ISBN13"
+                message="Document should be either an ISBN10 or ISBN13",
             )
         return values
 
@@ -55,21 +55,19 @@ class Book(pydantic.BaseModel):
         chars = [c for c in value if c in "0123456789xX"]
 
         if len(chars) != 10:
-            raise ISBN10FormatError(
-                value=value, message="ISBN10 should be 10 digits.")
+            raise ISBN10FormatError(value=value, message="ISBN10 should be 10 digits.")
 
         def char_to_int(char: str) -> int:
             if char in "xX":
                 return 10
             return int(char)
 
-        weighted_sum = sum((10 - i) * char_to_int(x)
-                           for i, x in enumerate(chars))
+        weighted_sum = sum((10 - i) * char_to_int(x) for i, x in enumerate(chars))
 
         if weighted_sum % 11 != 0:
             raise ISBN10FormatError(
-                value=value, message="ISBN10 digit sum should be divisible "
-                                     "by 11")
+                value=value, message="ISBN10 digit sum should be divisible " "by 11"
+            )
 
         return value
 

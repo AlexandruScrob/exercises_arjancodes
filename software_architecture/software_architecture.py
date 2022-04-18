@@ -15,7 +15,7 @@ def generate_uuid4():
 
 
 def generate_simple_id():
-    return ''.join(random.choices(string.ascii_lowercase, k=30))
+    return "".join(random.choices(string.ascii_lowercase, k=30))
 
 
 class Model:
@@ -77,13 +77,13 @@ class TkView(View):
         self.list = tk.Listbox(self.frame)
         self.list.pack(fill=tk.BOTH, expand=1)
         self.generate_uuid_button = tk.Button(
-            self.frame, text="Generate UUID",
-            command=controller.handle_click_generate_uuid
+            self.frame,
+            text="Generate UUID",
+            command=controller.handle_click_generate_uuid,
         )
         self.generate_uuid_button.pack()
         self.clear_button = tk.Button(
-            self.frame, text="Clear list",
-            command=controller.handle_click_clear_list
+            self.frame, text="Clear list", command=controller.handle_click_clear_list
         )
         self.clear_button.pack()
 

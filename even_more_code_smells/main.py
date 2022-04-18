@@ -7,17 +7,18 @@ from pos.system import POSSystem
 
 def main() -> None:
     # create the POS system and setup the payment processor
-    payment_processor = StripePaymentProcessor.\
-        create("https://api.stripe.com/v2")
+    payment_processor = StripePaymentProcessor.create("https://api.stripe.com/v2")
     system = POSSystem(payment_processor)
 
     # create a customer
-    customer = Customer(id=12345,
-                        name="Arjan",
-                        address="Sesame street 104",
-                        postal_code="1234",
-                        city="Amsterdam",
-                        email="hi@arjancodes.com")
+    customer = Customer(
+        id=12345,
+        name="Arjan",
+        address="Sesame street 104",
+        postal_code="1234",
+        city="Amsterdam",
+        email="hi@arjancodes.com",
+    )
 
     # create the order
     order = Order(customer)

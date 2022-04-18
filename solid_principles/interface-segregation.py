@@ -41,7 +41,7 @@ class DebitPaymentProcessor(PaymentProcessor):
     def __init__(self, security_code, authorizer: SMSAuth):
         self.authorizer = authorizer
         self.security_code = security_code
-    
+
     def pay(self, order):
         if not self.authorizer:
             raise Exception("Not authorized")

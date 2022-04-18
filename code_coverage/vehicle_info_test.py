@@ -3,7 +3,6 @@ from vehicle_info import VehicleInfo
 
 
 class TestVehicleInfo(unittest.TestCase):
-
     def test_compute_tax_non_electric(self):
         v = VehicleInfo("BMW", False, 10000)
         self.assertEqual(v.compute_tax(), 500)

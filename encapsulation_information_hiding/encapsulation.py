@@ -4,9 +4,9 @@ from typing import List
 
 
 class PaymentStatus(Enum):
-    CANCELLED = 'cancelled'
-    PENDING = 'pending'
-    PAID = 'paid'
+    CANCELLED = "cancelled"
+    PENDING = "pending"
+    PAID = "paid"
 
 
 class PaymentStatusError(Exception):
@@ -31,6 +31,7 @@ class OrderEncapsulationAndInformationHiding:
     to use is the is_paid method, you need no knowledge of how status is
     represented (that information is 'hidden').
     """
+
     items: List[LineItem] = field(default_factory=list)
     _payment_status: PaymentStatus = PaymentStatus.PENDING
 
@@ -57,4 +58,3 @@ class OrderEncapsulationAndInformationHiding:
 @dataclass
 class OrderNoEncapsulationNoInformationHiding:
     payment_status: PaymentStatus = PaymentStatus.PENDING
-

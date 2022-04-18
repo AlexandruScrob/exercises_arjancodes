@@ -24,19 +24,19 @@ class NotAuthorizedError(Exception):
 
 def blog_lst_to_json(item):
     return {
-        'id': item[0],
-        'published': item[1],
-        'title': item[2],
-        'content': item[3],
-        'public': bool(item[4])
-         }
+        "id": item[0],
+        "published": item[1],
+        "title": item[2],
+        "content": item[3],
+        "public": bool(item[4]),
+    }
 
 
 def fetch_blogs():
     try:
         with SQLite("application.db") as cur:
             # execute the query
-            cur.execute('SELECT * FROM blogs where public=1')
+            cur.execute("SELECT * FROM blogs where public=1")
 
             # fetch the data and turn into a dict
             result = list(map(blog_lst_to_json, cur.fetchall()))
@@ -51,7 +51,7 @@ def fetch_blogs():
 def fetch_blog(_id: str):
     try:
         # connect to the database
-        con = sqlite3.connect('application.db')
+        con = sqlite3.connect("application.db")
         cur = con.cursor()
 
         # execute the query and fetch the data
@@ -63,15 +63,16 @@ def fetch_blog(_id: str):
 
         data = blog_lst_to_json(result)
 
-        if not data['public']:
-            raise NotAuthorizedError(f"You're not allowed to "
-                                     f"access blog with id {_id}.")
+        if not data["public"]:
+            raise NotAuthorizedError(
+                f"You're not allowed to " f"access blog with id {_id}."
+            )
 
         return data
 
     except sqlite3.OperationalError as ex:
         print(ex)
-        raise NotFoundError(f'Unable to find blog with id {_id}.')
+        raise NotFoundError(f"Unable to find blog with id {_id}.")
 
     finally:
         # close the db

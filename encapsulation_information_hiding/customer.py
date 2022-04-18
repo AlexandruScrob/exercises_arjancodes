@@ -20,13 +20,9 @@ class Customer:
 
     def _send_welcome_email(self):
         subject = "Welcome to our platform!"
-        body = (
-            f"Hi, {self.name}, bla bla bla."
-            f"Cheers!"
-        )
+        body = f"Hi, {self.name}, bla bla bla." f"Cheers!"
         send_email(self.email_address, subject, body)
 
 
 def send_email(email_address, subject, body):
-    print(f"Email sent to {email_address}, with subject: {subject}"
-          f"and body: {body}")
+    print(f"Email sent to {email_address}, with subject: {subject}" f"and body: {body}")

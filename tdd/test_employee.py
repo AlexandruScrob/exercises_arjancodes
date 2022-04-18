@@ -22,12 +22,12 @@ class TestEmployeeComputePayout(unittest.TestCase):
 
     def test_employee_payout_no_commission_no_hours(self):
         """Whether payout is correctly computed in case
-         of no commission and no hours worked."""
+        of no commission and no hours worked."""
         self.assertAlmostEqual(self.arjan.compute_payout(), 1000.0)
 
     def test_employee_payout_no_commission(self):
         """Whether payout is correctly computed in case
-         of no commission and 10 hours worked."""
+        of no commission and 10 hours worked."""
         self.arjan.hours_worked = 10.0
         self.assertAlmostEqual(self.arjan.compute_payout(), 2000.0)
 

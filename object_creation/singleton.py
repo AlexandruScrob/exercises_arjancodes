@@ -1,5 +1,3 @@
-
-
 class Singleton(type):
     _instances = {}
 
@@ -12,7 +10,7 @@ class Singleton(type):
 class Logger(metaclass=Singleton):
     def __init__(self):
         print("Creating Logger")
-    
+
     def log(self, msg):
         print(msg)
 
