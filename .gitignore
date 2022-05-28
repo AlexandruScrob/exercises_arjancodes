@@ -1,6 +1,9 @@
 /venv
 .idea
+.env
+.coverage
 __pycache__/
 htmlcov/
 **/*.pyc
 **/.DS_Store
+**/htmlcov
