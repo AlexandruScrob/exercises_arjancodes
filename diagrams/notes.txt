@@ -1,0 +1,13 @@
+Mermaid
+- install markdown preview mermaid extension
+- doc: https://mermaid-js.github.io/mermaid/#
+
+PlantUML
+ - install plantuml extension, and go to settings plantuml and set plantuml render to PlantUMLServer and supply server
+ address:
+"plantuml.server": "https://www.plantuml.com/plantuml",
+"plantuml.render": "PlantUMLServer",
+ - doc: https://plantuml.com
+
+ HackerDraw
+  - doc: https://www.hackerdraw.com/
