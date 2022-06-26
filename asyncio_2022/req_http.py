@@ -1,5 +1,6 @@
-# import asyncio
-import aiohttp
+import asyncio
+
+# import aiohttp
 import requests
 
 # A few handy JSON types
