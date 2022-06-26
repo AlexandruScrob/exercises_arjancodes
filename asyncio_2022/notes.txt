@@ -1,0 +1,4 @@
+Concurrency = two lines of customers ordering froma a single cashier (lines take 
+              turns ordering);
+Parallelism = two lines of customers ordering from two cashiers (each line gets its
+              own cashier)
