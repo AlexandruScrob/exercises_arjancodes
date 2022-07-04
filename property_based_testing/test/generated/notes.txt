@@ -1,0 +1,3 @@
+Commands:
+hypothesis write office.generate_random_team > test/generated/test_office_1.py
+hypothesis write office.fire_random_employee > test/generated/test_office_2.py
