@@ -1,27 +1,25 @@
 from dash import Dash, dcc, html
 import plotly.graph_objects as go
 from dash.dependencies import Input, Output
-import pandas as pd
-
-from src.data.loader import DataSchema
+from ..data.source import DataSource
 
 from . import ids
 
 
-def render(app: Dash, data: pd.DataFrame) -> html.Div:
+def render(app: Dash, source: DataSource) -> html.Div:
     @app.callback(
         Output(ids.PIE_CHART, "children"),
         [Input(ids.YEAR_DROPDOWN, "value"), Input(ids.MONTH_DROPDOWN, "value"), Input(ids.CATEGORY_DROPDOWN, "value")],
     )
     def update_pie_chart(years: list[str], months: list[str], categories: list[str]) -> html.Div:
-        filtered_data = data.query("year in @years and month in @months and category in @categories")
+        filtered_source = source.filter(years=years, months=months, categories=categories)
 
-        if filtered_data.shape[0] == 0:
+        if not filtered_source.row_count:
             return html.Div("no data selected", id=ids.PIE_CHART)
 
         pie = go.Pie(
-            labels=filtered_data[DataSchema.CATEGORY].tolist(),
-            values=filtered_data[DataSchema.AMOUNT].tolist(),
+            labels=filtered_source.all_categories,
+            values=filtered_source.all_amounts,
             hole=0.5,
         )
 

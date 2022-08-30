@@ -53,3 +53,4 @@ urllib3==1.26.9
 Werkzeug==2.0.3
 wrapt==1.13.3
 yarl==1.7.2
+python-i18n==0.3.9

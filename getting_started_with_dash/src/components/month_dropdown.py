@@ -1,34 +1,35 @@
 from dash import Dash, html, dcc
 from dash.dependencies import Input, Output
 
-import pandas as pd
+import i18n
 
-from src.data.loader import DataSchema
+from ..data.source import DataSource
 
 from . import ids
 
 
-def render(app: Dash, data: pd.DataFrame) -> html.Div:
-    all_months = data[DataSchema.MONTH].tolist()
-    unique_months = sorted(set(all_months), key=int)
-
+def render(app: Dash, source: DataSource) -> html.Div:
     @app.callback(
         Output(ids.MONTH_DROPDOWN, "value"),
         [Input(ids.YEAR_DROPDOWN, "value"), Input(ids.SELECT_ALL_MONTHS_BUTTON, "n_clicks")],
     )
-    def update_months(years: list[str], _: int) -> list[str]:
-        filtered_data = data.query("year in @years")
-        return sorted(set(filtered_data[DataSchema.MONTH].tolist()))
+    def select_all_months(years: list[str], _: int) -> list[str]:
+        return source.filter(years=years).unique_months
 
     return html.Div(
         children=[
-            html.H6("Month"),
+            html.H6(i18n.t("general.month")),
             dcc.Dropdown(
                 id=ids.MONTH_DROPDOWN,
-                options=[{"label": month, "value": month} for month in unique_months],
-                value=unique_months,
+                options=[{"label": month, "value": month} for month in source.unique_months],
+                value=source.unique_months,
                 multi=True,
             ),
-            html.Button(className="dropdown-button", children=["Select ALL"], id=ids.SELECT_ALL_MONTHS_BUTTON),
+            html.Button(
+                className="dropdown-button",
+                children=[i18n.t("general.select_all")],
+                id=ids.SELECT_ALL_MONTHS_BUTTON,
+                n_clicks=0,
+            ),
         ]
     )
