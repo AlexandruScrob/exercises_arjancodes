@@ -1,0 +1,5 @@
+1. Avoid deep inheritance relationships
+2. Separate creating reosurces from using them
+3. Introduce abstractions
+4. Avoid inappropriate intimacy
+5. Introduce an intermiedate data structure
