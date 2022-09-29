@@ -1,0 +1,11 @@
+# login to google cloud
+gcloud auth login
+
+gcloud config set project arjancodes-pulumi
+glcoud auth application-default login
+
+# create resources
+pulumi up
+
+pulumi destroy
+pulumi stack rm dev
