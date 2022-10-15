@@ -54,3 +54,5 @@ Werkzeug==2.0.3
 wrapt==1.13.3
 yarl==1.7.2
 python-i18n==0.3.9
+pytz==2022.4
+pendulum==2.1.2
