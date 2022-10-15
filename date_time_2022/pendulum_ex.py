@@ -23,6 +23,8 @@ def main() -> None:
         some_date.format("LLLL"),
     )
 
+    # pendulum was not updated in a while
+    # TODO take in consideration packages that are actively maintained
     pendulum.set_locale("en")
     print(pendulum.now().add(years=1).diff_for_humans())  # in 1 year
 
