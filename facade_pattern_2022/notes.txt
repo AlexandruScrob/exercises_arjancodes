@@ -1,0 +1,2 @@
+facade pattern
+ - introduces an object between your low level system and your application
