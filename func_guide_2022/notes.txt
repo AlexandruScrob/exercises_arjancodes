@@ -1,0 +1,7 @@
+Tip 1: Do one thing and do it well
+Tip 2: Separate Commands from queries
+Tip 3: Only request information you actually need
+Tip 4: Keep the number of parameters minimal
+Tip 5: Don’t create and use an object in the same place
+Tip 6: Don’t use flag arguments
+Tip 7: Remember that functions are objects
