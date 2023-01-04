@@ -1,0 +1,49 @@
+Shortcuts:
+
+General
+1. CTRL + SHIFT + N - open vscode
+2. CTRL + =/- - zoom in/out
+3. CTRL + Backtick - open/close terminal
+4. CTRL + B - open close workspace navigator
+5. CTRL + SHIFT + E - workspace explorer
+6. CTRL + SHIFT + F - find
+7. CTRL + SHIFT + G - source control
+8. CTRL + SHIFT + X - extensions
+9. CTRL + K + Z - zen mode
+10. CTRL + SHIFT + B - command palette
+
+Files
+11. CTRL + P - search open file
+12. CTRL + S - save file
+13. CTRL + K + S - save all files
+14. CTRL + HOME/END - start/end of file
+15. CTRL + F - find in file
+15+ SHIFT + F3/Enter (while in find) to reverse search
+16. SHIFT + F12 - where the reference is being used
+17. F12 - navigate to reference
+18. CTRL + PGUP/PGDN - navigate between tabs
+19. CTRL + W - close tab
+20. CTRL + K + W - close all tabs
+21. CTRL + SHIFT + V - preview (markdowns)
+22. CTRL + K + V - preview on the side
+
+Editor (ex. vim)
+23. CTRL + D - edit all occurences
+24. F2 - update var name everywhere
+25. ALT + UPARROW/DOWNARROW - move code lines
+26. ALT + SHIFT + UPARROW/DOWNARROW - copy code line
+27. CTRL + / - comment code line
+28. ALT + SHIFT + A - comment code block
+29. CTRL + , - vscode settings
+30. CTRL + K + CTRL + S - command 
+
+Bonus
+in json settings workspace title bar color:
+"workbench.colorCustomizations: {
+    "titleBar.activeBackground": "#a74b00"
+}
+
+
+Sources:
+ - https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+ - https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
