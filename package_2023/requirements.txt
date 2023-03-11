@@ -1,0 +1,4 @@
+bson>=0.5.10
+python-dateutil>=2.8.2
+six>=1.16.0
+wheel>=0.38.4

@@ -1,0 +1,12 @@
+python setup.py bdist_wheel sdist
+
+pip install .
+
+twine upload dist/*
+
+5 things before publishing your code:
+- make sure your package/code is clean
+- add supporting material so your package is easy to use
+- choose an appropriate software license
+- make managing package updates easy (ex. bumpversion package)
+- use project classifiers (ex. in setup.py)
