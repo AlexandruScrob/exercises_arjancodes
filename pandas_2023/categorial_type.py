@@ -71,6 +71,8 @@ def main() -> None:
     # customer_id                  0.000000
     # customer_unique_id           0.000000
     # customer_zip_code_prefix     6.502600
+    #   -> data is too different to have an advantage with categorical type
+    #      you also store the category beside the data
     # customer_city              -90.856007
     # customer_state             -98.259661
     # dtype: float64
