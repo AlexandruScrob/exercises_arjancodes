@@ -1,0 +1,6 @@
+- clear naming, clear structure
+
+1. Comments (VSCode extension: Better Comments)
+2. Type Hints (settings -> python.analysis.typeCheckingMode)
+3. Docstrings (VSCode extension: autoDocstring with settings autoDocstring.docstringFormat)
+4. ChatGPT
