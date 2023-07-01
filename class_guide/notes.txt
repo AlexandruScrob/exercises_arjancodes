@@ -1,0 +1,5 @@
+1. Keep your classes small
+2. Make your classes easy to use
+3. Use dependency injection
+4. Make sure a class is actually needed
+5. Use encaptulation
