@@ -1,0 +1,21 @@
+- floats are very fast, but are not very precise,  so for monetary values we should
+ use Decimal
+- Decimal is not suited for performance (ex. fast transactions) and is only used in
+ python, so it can't be properly used in dbs -> one way to store the values in the
+  db is with integers (or json, or all other representation types)
+- with int you can store the values in the smallest currency unit possible
+ (ex 3.65 -> 365)
+- numpy has builtin types it runs sligthy faster than normal builtin, but values can be
+limited (ex overflow error for int), 128-256 are not supported on all platforms
+
+- for monetary values use either int or Decimals (not floats)
+
+Decimals:
+ - direct representation
+ - flexible precision
+ - built-in rounding
+
+ Integer:
+ - fast performance
+ - low memory usage
+ - wide compatibility
