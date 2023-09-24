@@ -1,0 +1,12 @@
+Framework:
+1. Analyze - understand how the concepts and code work
+2. Goal setting - you need to know what you're doing and when you're done
+3. Create safety net - write complete sets of unit tests
+4. Refactor step-by-step: 
+    - start with simple quality of life
+    - intermediate steps
+    - go from simple to complex
+    - inverting logic
+    - split isolated parts in separate functions
+    - commit your intermediate steps
+5. Measure success (ex. easy to add new types of items)
