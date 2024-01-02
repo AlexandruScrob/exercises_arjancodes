@@ -1,0 +1,26 @@
+# 15 Python Libraries
+1. Pendulum -> for Datetime
+2. pydpf -> for pdf
+3. icecream -> for debugging (ic instead of print)
+4. loguru -> library for logging
+5. rich -> render types of doc
+6. argparse -> build cmd line interface
+7. tqdm -> progress bar
+8. Xarray -> multidimensional layered data
+9. Polars -> dataframe library
+10. seaborn -> statistical data visualization
+11. result -> alternative to handling errors using exception handling
+12. pydantic -> data validation
+13. FastAPI -> modern web framework
+14. sqlmodel -> sql alchemy + pydantic
+15. httpx -> async support
+16. python-dotenv -> for .env files
+
+
+# What Can 1970s German Industrial Design Principles Teach Us?
+Good design:
+1. is innovative
+2. makes the product useful
+3. is aesthetic
+4. makes a product understandable
+5. is unobstrusive
