@@ -1,0 +1,5 @@
+the tests in the test_api.py are integration tests (not unit tests) since they test
+ both endpoints and db operations
+
+The code should be slipt up into db operations and endpoints into different
+ files/functions

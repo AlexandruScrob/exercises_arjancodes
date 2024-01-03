@@ -24,3 +24,19 @@ Good design:
 3. is aesthetic
 4. makes a product understandable
 5. is unobstrusive
+6. is honest
+7. is long-lasting
+8. is through down to the last detail
+9. is environmentally friendly
+10. is as little design as possible
+
+
+# 7 Tips To Structure Your Python Data Science Projects
+1. Use a common structure (ex. cookie cutter)
+2. Use existing libraries (ex. pandas, scikit-learn, pytorch, sqlalchemy)
+Note: useful to have a pipeline (ex. taipy)
+3. Log your results (ex. comet)
+4. Use intermediate data representation
+5. Move reusable code to a shared editable package
+6. Move configuration to a separate file
+7. Write unit tests

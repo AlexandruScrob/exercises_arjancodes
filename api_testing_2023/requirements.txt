@@ -1,0 +1,6 @@
+fastapi>=0.103.1
+sqlalchemy>=2.0.21
+uvicorn>=0.23.2
+pytest>=7.4.2
+https>=0.26.0
+pydantic>=2.5.3

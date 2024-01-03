@@ -1,0 +1,5 @@
+- design pattern in functional programming
+functor = an object with a value combined with a function to do something with that value
+endofunctor = specific version of a functor that returns something with the same shape as the original functor (same combination)
+monad is a monoid in the domain of endofunctors
+rail-road programming = alternative to exception handling (valid path + invalid path)
