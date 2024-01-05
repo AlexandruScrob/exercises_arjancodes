@@ -34,9 +34,19 @@ Good design:
 # 7 Tips To Structure Your Python Data Science Projects
 1. Use a common structure (ex. cookie cutter)
 2. Use existing libraries (ex. pandas, scikit-learn, pytorch, sqlalchemy)
-Note: useful to have a pipeline (ex. taipy)
+    Note: useful to have a pipeline (ex. taipy)
 3. Log your results (ex. comet)
 4. Use intermediate data representation
 5. Move reusable code to a shared editable package
 6. Move configuration to a separate file
 7. Write unit tests
+
+
+# 5 Ways First Principles Thinking Helps You Code Better
+1. Identify and define the fundamental truths 
+    -> understand the problem and the properties of the tools
+2. Break problems down to their core
+3. Reassemble elements innovatively
+4. Validate your assumptions regularly
+5. Focus on simplicity and functionality
+Bonus: Make sure you learn continuously
