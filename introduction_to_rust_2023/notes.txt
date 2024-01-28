@@ -1,0 +1,2 @@
+- use cffi library to link python to rust code
+- rustc to compile, then run exe
