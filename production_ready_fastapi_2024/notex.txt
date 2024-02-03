@@ -1,0 +1,4 @@
+1. Split things up with routers
+2. Remove operation code from endpoint functions
+3. Optimize application deployment
+4. Avoid abuse of your application

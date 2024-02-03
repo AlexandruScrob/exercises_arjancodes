@@ -1,0 +1,7 @@
+pulumi>=3.0.0
+pulumi-gcp>=7.7.0
+pulumi_docker>=4.5.1
+fastapi>=0.109.1
+sqlalchemy>=2.0.25
+uvicorn>=0.27.0.post1
+slowapi>=0.1.8

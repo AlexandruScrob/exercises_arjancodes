@@ -10,3 +10,4 @@ htmlcov/
 **/htmlcov
 **/.hypothesis
 .vscode/
+**/**/venv
