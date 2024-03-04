@@ -1,0 +1,7 @@
+- [project] name should be the same as the #[pymodule] name from the library file
+- pyo3 -> a library that allows you to write rust based python modules
+
+- maturin -> tool that allows to build and deploy rust based python modules
+          -> can be configured in pyproject.toml [tool.maturin]
+          -> commands: maturin develop, maturin publish
+          -> rustimport -> only to import specific code from rust, not the whole module
