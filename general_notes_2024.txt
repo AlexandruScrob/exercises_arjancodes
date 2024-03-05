@@ -1,0 +1,7 @@
+# Visual Studio Code Extensions for Backend Development in 2024
+1. Postman
+2. GitLens
+3. Database extensions (ex. SQLite)
+4. Autoformaters and linters (ex. pilint, black, ruff)
+5. Other: Docker, Even Better TOML, Better Comments, Dev Containers, GitHub Actions, GitHub Copilot, Jupyter,
+Markdown Extended, Markdown PDF, Markdown Preview Mermaid, rust-analyzer
