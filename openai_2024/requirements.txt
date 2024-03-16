@@ -1,0 +1,5 @@
+openai>=1.7.2
+python-dotenv>=1.0.0
+tiktoken>=0.5.2
+ratelimiter>=1.2.0.post0
+pytest>=7.4.4

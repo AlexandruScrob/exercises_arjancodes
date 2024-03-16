@@ -1,0 +1,4 @@
+3 Tips for Working With the OpenAI API:
+ - Take token limits into account
+ - Make sure you don't hit a rate limit
+ - Use an appropriate model
