@@ -1,0 +1,13 @@
+poetry show
+poetry lock
+
+poetry add requests^2.12.1
+poetry show requests
+poetry add fastapi
+
+poetry install
+poetry install --no-root  # for package folder/file not found
+
+poetry shell  # to use the env
+
+poetry version minor  # to bump version
