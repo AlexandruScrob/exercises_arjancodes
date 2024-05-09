@@ -1,7 +1,38 @@
+###
 # Visual Studio Code Extensions for Backend Development in 2024
+###
 1. Postman
 2. GitLens
 3. Database extensions (ex. SQLite)
 4. Autoformaters and linters (ex. pilint, black, ruff)
 5. Other: Docker, Even Better TOML, Better Comments, Dev Containers, GitHub Actions, GitHub Copilot, Jupyter,
 Markdown Extended, Markdown PDF, Markdown Preview Mermaid, rust-analyzer
+
+###
+# The Basics You Need to Know about AWS, Azure, and Google Cloud
+###
+1. Compute
+Virtual Machines: AWS EC2, Azure Virtual Machines, GCP Compute Engine
+- complete cluster, not as fast
+Serverless: Google Cloud Functions, Azure Functions, AWS Lambda
+- limited python versions, limited machines we can use
+Kubernetes: AWS EKS, Azure AKS, GCP Kubernetes Engine
+Simple Container: Google Cloud Run, Azure Container Instances, AWS Fargate
+
+2. Object Storage: AWS S3, Google Cloud Storage, Blob Storage
+
+3. Databases
+Relational: mysql, postgres
+NoSQL: AWS DynamoDB, Azure CosmosDB, Google Firestore/datastore
+Data Warehouse: AWS Redshift, Google BigQuery, Azure Synapse Analytics
+
+4. AI and ML solutions
+
+
+###
+# SemVer: The Backbone of Software
+###
+SemVer = Semantic Versioning
+Version Format: X.Y.Z (X - major version, Y - minor version, Z - patch)
+1.0.0 -> first production ready version
+ex. 1.2.1 > 1.2.1-pre-realease
