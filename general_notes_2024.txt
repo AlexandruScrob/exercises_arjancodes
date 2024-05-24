@@ -18,14 +18,11 @@ Serverless: Google Cloud Functions, Azure Functions, AWS Lambda
 - limited python versions, limited machines we can use
 Kubernetes: AWS EKS, Azure AKS, GCP Kubernetes Engine
 Simple Container: Google Cloud Run, Azure Container Instances, AWS Fargate
-
 2. Object Storage: AWS S3, Google Cloud Storage, Blob Storage
-
 3. Databases
 Relational: mysql, postgres
 NoSQL: AWS DynamoDB, Azure CosmosDB, Google Firestore/datastore
 Data Warehouse: AWS Redshift, Google BigQuery, Azure Synapse Analytics
-
 4. AI and ML solutions
 
 
@@ -36,3 +33,26 @@ SemVer = Semantic Versioning
 Version Format: X.Y.Z (X - major version, Y - minor version, Z - patch)
 1.0.0 -> first production ready version
 ex. 1.2.1 > 1.2.1-pre-realease
+
+
+###
+# 5 Tips for Building Powerful Data Dashboards in Python
+###
+1. Pick the right tool for the job
+2. Make sure the user interface is good
+3. Implement filters
+4. Separate data collection from data visualization
+5. Control who has access
+Bonus: Optimize for Performance
+
+
+###
+# Everything You Need to Know about Debugging in VSCode
+###
+3 types of breakpoints: 
+    - line breakpoints
+    - conditional breakpoint (right click on a normal breakpoint -> edit...)
+    - function breakpoint (added in the breakpoints section)
+You can see calls to functions, local variables in call stack
+Step into/out of a function
+Watch panel where you can define and compute expressions
