@@ -1,0 +1,5 @@
+- useful in db operations (keeps it consistent)
+- helps to clarify code (groups operations)
+- commit and rollback
+- ex. rollback functionality for large files, complex games, 
+infrastructure of cloud services
