@@ -11,3 +11,4 @@ htmlcov/
 **/.hypothesis
 .vscode/
 **/**/venv
+*.lock

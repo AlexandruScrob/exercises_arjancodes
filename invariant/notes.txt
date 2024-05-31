@@ -1,0 +1,3 @@
+Invariant = a property of a mathematical object (or a class of mathematical objects)
+            that remains unchanged after operations or transformations of a certain type
+            are applied to the object

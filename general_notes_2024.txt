@@ -5,8 +5,10 @@
 2. GitLens
 3. Database extensions (ex. SQLite)
 4. Autoformaters and linters (ex. pilint, black, ruff)
-5. Other: Docker, Even Better TOML, Better Comments, Dev Containers, GitHub Actions, GitHub Copilot, Jupyter,
+5. Other: Docker, Even Better TOML, Better Comments, Dev Containers, GitHub Actions,
+GitHub Copilot, Jupyter,
 Markdown Extended, Markdown PDF, Markdown Preview Mermaid, rust-analyzer
+
 
 ###
 # The Basics You Need to Know about AWS, Azure, and Google Cloud
@@ -56,3 +58,9 @@ Bonus: Optimize for Performance
 You can see calls to functions, local variables in call stack
 Step into/out of a function
 Watch panel where you can define and compute expressions
+
+
+###
+# Git Hooks
+###
+Located in .git/hooks folder (remove .sample from name)
