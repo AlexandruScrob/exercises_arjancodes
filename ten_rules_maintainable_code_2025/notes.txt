@@ -1,0 +1,12 @@
+10 Tips to Keep Your Software Simple:
+1. YAGNI - You ain't gonna need it
+2. DRY - Don't repeat yourself
+3. Avoid overengineering
+4. Organize yourself
+5. Keep functions short
+6. Avoid hardcoded values
+7. Use meaningful names
+8. Document your thought process, not just what the code does
+9. Don't overcomplicate you module structure
+10. Write tests for critical code
+Bonus. Spend 10% of your time on refactoring
