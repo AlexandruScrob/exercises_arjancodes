@@ -1,0 +1,3 @@
+global coupling -> functions dependent of global variable
+content coupling -> when a module directly accesses/modifies internal details of another module
+stamp coumpling -> when a module passes a complex data structure to another module (even if only it's partially used)

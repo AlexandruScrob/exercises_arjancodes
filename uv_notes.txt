@@ -1,0 +1,14 @@
+To install the latest Python version:
+$ uv python install
+
+To create venv:
+$ uv venv
+
+To Activate venv:
+$ source .venv/bin/activate
+
+To install dependnecies:
+$ uv pip install -r pyproject.toml
+
+To run scripts:
+$ uv run main.py

@@ -1,0 +1,3 @@
+1. The order of the decorators can cause unexpected bugs (ex. cache authentication)
+2. Decorators can break code analysis and typing (ex in hydra_example i'ts better to not use at all decorators)
+3. Decorators can introduce hidden function requirements (ex. fastapi with slow limiting rate decorator)
