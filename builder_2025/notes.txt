@@ -1,1 +1,12 @@
 builder pattern in detail: https://refactoring.guru/
+
+
+pros:
+- clean fluent api
+- separate construction from logic
+- readable
+
+cons:
+- introduces boiler plate
+- easy to make mistakes
+- 
