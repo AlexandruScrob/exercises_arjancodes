@@ -1,0 +1,15 @@
+1. PyToolz: https://toolz.readthedocs.io/en/latest/
+2. Tabulate: https://pypi.org/project/tabulate/
+3. Rich: https://rich.readthedocs.io/en/stable/introduction.html
+4. Hypothesis: https://hypothesis.readthedocs.io/en/latest/
+5. Pydantic-settings: https://docs.pydantic.dev/latest/concepts/pydantic_settings/
+6. Httpx: https://www.python-httpx.org/
+7. FastAPI-pagination: https://pypi.org/project/fastapi-pagination/
+8. FastStream: https://pypi.org/project/faststream/
+9. NiceGUI: https://nicegui.io/
+10. Flet: https://flet.dev/
+11. Reflex: https://reflex.dev/
+12. Textual: https://textual.textualize.io/
+13. LangGraph: https://www.langchain.com/langgraph
+14. PydanticAI: https://ai.pydantic.dev/
+BONUS. Marimo: https://marimo.io/
