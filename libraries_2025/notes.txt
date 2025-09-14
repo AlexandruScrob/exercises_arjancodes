@@ -12,4 +12,4 @@
 12. Textual: https://textual.textualize.io/
 13. LangGraph: https://www.langchain.com/langgraph
 14. PydanticAI: https://ai.pydantic.dev/
-BONUS. Marimo: https://marimo.io/
+BONUS. Marimo: https://marimo.io/ (or extension in vscode)

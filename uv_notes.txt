@@ -5,7 +5,10 @@ To create venv:
 $ uv venv
 
 To Activate venv:
-$ source .venv/bin/activate
+- Linux:
+    $ source .venv/bin/activate
+- Windows:
+    .venv\Scripts\activate
 
 To install dependnecies:
 $ uv pip install -r pyproject.toml
