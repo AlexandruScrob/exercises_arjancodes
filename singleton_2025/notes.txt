@@ -1,0 +1,7 @@
+Problems:
+- inntroduces shared multiple state
+- not thread safe
+
+Uses:
+- instance control (ex. LLM loaded only once)
+- object pool (pool of reusable isntances)
