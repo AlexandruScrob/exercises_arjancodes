@@ -1,0 +1,1 @@
+Flox.dev -> Manage all of your software and its dependencies, down to the smallest package, SBOMs and provenance included. Onboard instantly, and work consistently across the entire software lifecycle.
