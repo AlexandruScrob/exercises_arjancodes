@@ -1,0 +1,9 @@
+1. Wrong Data Structure (Implicit Join)
+2. Behaviour in the wrong place
+3. Too many responsibilities
+
+Other reasons nested loops appear:
+1. Wrong abstraction level
+2. Fear of introducing extra data structures
+3. Incremental growth
+4. Lack of Python knowledge
