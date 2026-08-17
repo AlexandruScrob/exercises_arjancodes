@@ -1,0 +1,10 @@
+[project]
+site_name = "Payment Service Docs"
+site_description = "Internal documentation for the payment service"
+site_author = "ArjanCodes"
+docs_dir = "docs"
+site_dir = "site"
+dev_addr = "localhost:3000"
+
+[project.theme]
+variant = "modern"
