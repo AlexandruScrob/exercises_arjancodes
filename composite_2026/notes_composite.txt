@@ -1,0 +1,9 @@
+Pros:
+- trat one object or many objects the same
+- object model mirrors real life hierarchy
+- if you add new functionality, it rarely changes the existing code (small game loop)
+
+Cons:
+- recursion has a performance cost (huge trees -> stackoverflow)
+- handle communication and coupling -> design problems
+- large trees -> difficult to debug/inspect
