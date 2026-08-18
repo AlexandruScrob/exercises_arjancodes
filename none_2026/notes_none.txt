@@ -1,0 +1,7 @@
+1. Use better defaults
+2. Push validation earlier
+3. Rely on exceptions
+4. Be explicit about modeling states
+5. Use the null object pattern
+6. Sentinel objects
+7. Results objects
